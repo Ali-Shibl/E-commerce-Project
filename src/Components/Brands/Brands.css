@@ -1,0 +1,36 @@
+.box-brand{
+    z-index: 22222222222222;
+    transition: 1s;
+}
+
+@keyframes tran {
+    0%{
+       transform: translateY(0);
+        scale: 0;
+    }
+    70%{
+        scale: 1.2;
+    
+    }
+    100%{        
+        transform: translateY(70px);
+        scale: 1;
+    }
+}
+
+.brand-show{
+    transform: translateY(70px);
+
+animation: tran .8s 1 ;
+}
+@media (max-width:768px) {
+    .brand-show{
+        width: 335px;
+    }
+    .brand-show h1{
+      font-size: 20px;
+    }
+    .brand-show p{
+        font-size: 15px;
+    }
+}
